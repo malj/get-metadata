@@ -33,6 +33,6 @@ Query the DOM for a meta element with the attribute "name" value equal to the `n
 - key (default: `'name'`): Queries a meta tag by this attribute key
 - warn (default: `false`): Displays a warning in the console if no meta element is found
 
-## Resouces
+## Resources
 
 - [W3C spec](https://www.w3.org/TR/html5/document-metadata.html#the-meta-element)

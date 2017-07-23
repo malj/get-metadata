@@ -1,14 +1,14 @@
-;(function (name, global, factory) {
-    if (typeof exports === 'object') {
+;(function (global, factory) {
+    if (typeof define === 'function' && define.amd) {
+        define(factory)
+    }
+    else if (typeof exports === 'object') {
         module.exports = factory()
     }
-    else if (typeof define === 'function' && define.amd) {
-        define(name, factory)
-    }
     else {
-        global[name] = factory()
+        global.getMetadata = factory()
     }
-}('getMetadata', this, function () {
+}(this, function () {
     /**
      * A utility function for querying and normalizing DOM metadata content
      * https://www.w3.org/TR/html5/document-metadata.html#the-meta-element
